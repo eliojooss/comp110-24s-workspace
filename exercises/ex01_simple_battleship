@@ -2,10 +2,20 @@
 
 __author__ = "730484781"
 
-user_input: str = input("pick a secret boat location between 1 and 4: ")
+user_input1: str = input("pick a secret boat location between 1 and 4: ")
 
-user_number: int = int(user_input)
-if user_number < 1:
-    print("Error!",user_number,"too low!")
-if user_number > 4:
-    print("Error!",user_number,"too high!")
+user_number1: int = int(user_input1)
+if user_number1 < 1:
+    print("Error!",user_number1,"too low!")
+if user_number1 > 4:
+    print("Error!",user_number1,"too high!")
+
+user_input2: str = input("pick a secret boat location between 1 and 4: ")
+
+user_number2: int = int(user_input2)
+if user_number2 < 1:
+    print("Error!",user_number2,"too low!")
+if user_number2 > 4:
+    print("Error!",user_number2,"too high!")
+
+    
