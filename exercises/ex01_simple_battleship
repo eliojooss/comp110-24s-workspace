@@ -1,0 +1,11 @@
+"""EX01 - Simple Battleship - A cute step toward Battleship."""
+
+__author__ = "730484781"
+
+user_input: str = input("pick a secret boat location between 1 and 4: ")
+
+user_number: int = int(user_input)
+if user_number < 1:
+    print("Error!",user_number,"too low!")
+if user_number > 4:
+    print("Error!",user_number,"too high!")
