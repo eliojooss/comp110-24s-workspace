@@ -17,5 +17,3 @@ if user_number2 < 1:
     print("Error!",user_number2,"too low!")
 if user_number2 > 4:
     print("Error!",user_number2,"too high!")
-
-    
