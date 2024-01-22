@@ -31,24 +31,24 @@ user_guess_color: str = (BLUE_BOX)
 if user_guessint1 == user_number1:
     user_guess_color = (RED_BOX)
     if user_guessint1 == 1:
-        final_display = (user_guess_color + " " + BLUE_BOX + " " + BLUE_BOX + " " + BLUE_BOX)
+        final_display = (user_guess_color + BLUE_BOX + BLUE_BOX + BLUE_BOX)
     if user_guessint1 == 2:
-        final_display = (BLUE_BOX + " " + user_guess_color + " " + BLUE_BOX + " " + BLUE_BOX)
+        final_display = (BLUE_BOX + user_guess_color + BLUE_BOX + BLUE_BOX)
     if user_guessint1 == 3:
-        final_display = (BLUE_BOX + " " + BLUE_BOX + " " + user_guess_color + " " + BLUE_BOX)
+        final_display = (BLUE_BOX + BLUE_BOX + user_guess_color + BLUE_BOX)
     if user_guessint1 == 4:
-        final_display = (BLUE_BOX + " " + BLUE_BOX + " " + BLUE_BOX + " " + user_guess_color)
+        final_display = (BLUE_BOX + BLUE_BOX + BLUE_BOX + user_guess_color)
     print(final_display)
     print("Correct! You hit the ship.")    
 else:
     user_guess_color = (WHITE_BOX)
     if user_guessint1 == 1:
-        final_display = (user_guess_color + " " + BLUE_BOX + " " + BLUE_BOX + " " + BLUE_BOX)
+        final_display = (user_guess_color + BLUE_BOX + BLUE_BOX + BLUE_BOX)
     if user_guessint1 == 2:
-        final_display = (BLUE_BOX + " " + user_guess_color + " " + BLUE_BOX + " " + BLUE_BOX)
+        final_display = (BLUE_BOX + user_guess_color + BLUE_BOX + BLUE_BOX)
     if user_guessint1 == 3:
-        final_display = (BLUE_BOX + " " + BLUE_BOX + " " + user_guess_color + " " + BLUE_BOX)
+        final_display = (BLUE_BOX + BLUE_BOX + user_guess_color + BLUE_BOX)
     if user_guessint1 == 4:
-        final_display = (BLUE_BOX + " " + BLUE_BOX + " " + BLUE_BOX + " " + user_guess_color)
+        final_display = (BLUE_BOX + BLUE_BOX + BLUE_BOX + user_guess_color)
     print(final_display)
     print("Incorrect! You missed the ship.")
