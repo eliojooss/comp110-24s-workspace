@@ -29,7 +29,7 @@ final_display: str = (BLUE_BOX + BLUE_BOX + BLUE_BOX + BLUE_BOX)
 user_guess_color: str = (BLUE_BOX)
 
 if user_guessint1 == user_number1:
-    user_guess_color = (WHITE_BOX)
+    user_guess_color = (RED_BOX)
     if user_guessint1 == 1:
         final_display = (user_guess_color + " " + BLUE_BOX + " " + BLUE_BOX + " " + BLUE_BOX)
     if user_guessint1 == 2:
@@ -41,7 +41,7 @@ if user_guessint1 == user_number1:
     print(final_display)
     print("Correct! You hit the ship.")    
 else:
-    user_guess_color = (RED_BOX)
+    user_guess_color = (WHITE_BOX)
     if user_guessint1 == 1:
         final_display = (user_guess_color + " " + BLUE_BOX + " " + BLUE_BOX + " " + BLUE_BOX)
     if user_guessint1 == 2:
