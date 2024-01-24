@@ -1,6 +1,6 @@
 x: str = "Hello"
 y: int = len(x)
-if: y % 4 == 1
+if y % 4 == 1:
     y *= 2 
 y -= 6
 print(y)
