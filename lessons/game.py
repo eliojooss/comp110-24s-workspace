@@ -11,7 +11,7 @@ while not correct: #same as saying while correct == False
         correct = True
     else:
         if guess > 10:
-            print("Your guess is to low!")
+            print("Your guess is to High!")
         if guess < 1:
             print("Your guess is to low!")
         print("Try again!")
