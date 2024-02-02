@@ -47,7 +47,9 @@ while row_counter <= GRID:
                 row_string += result_box
             else: 
                 row_string += BLUE_BOX
-            column_counter += 1
+            row_counter += 1
+
+    
 
 
 
