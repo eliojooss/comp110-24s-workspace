@@ -29,25 +29,32 @@ while run_column == True:
     else:
         run_column = False
 
-result_box = BLUE_BOX
+result_box: str = BLUE_BOX
 if SECRET_ROW == user_row and SECRET_COLUMN == user_column:
-    result_box = RED_BOX
+    result_box: str = RED_BOX
 else:
-    result_box = WHITE_BOX
+    result_box: str = WHITE_BOX
 
 row_counter: int = 1
 
 while row_counter <= GRID:
-    row_string: str = ()
+    row_string: str = (f"")
     column_counter: int = 1
 
     if user_row == row_counter:
         while column_counter <= GRID:
-            if user_column == column_counter
+            if user_column == column_counter:
                 row_string += result_box
             else: 
                 row_string += BLUE_BOX
-            row_counter += 1
+            column_counter += 1
+    else:
+        while column_counter <= GRID:
+            row_string += BLUE_BOX
+            column_counter += 1
+    row_counter += 1
+    print(row_string)
+
 
     
 
