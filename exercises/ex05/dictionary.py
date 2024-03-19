@@ -61,6 +61,7 @@ def alphabetizer(my_list: list[str]) -> dict[str, list[str]]:
 def update_attendance(attendance: dict[str, list[str]], day: str, person: str) -> None:
     """Update attendance!"""
     if day in attendance:
-        attendance[day].append(person)
+        if person not in attendance[day]:
+            attendance[day].append(person)
     else:
         attendance[day] = [person]
