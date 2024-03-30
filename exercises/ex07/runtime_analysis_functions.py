@@ -1,12 +1,19 @@
 import numpy as np
 import timeit
 import tracemalloc
+import random
 
 MAX_VAL: int = 10 ** 5
 
 def random_descending_list(n: int) -> list[int]:
     """Generate a list of random descending integers."""
     new_list: list[int] = []
+    new_list.append(MAX_VAL)
+    last_val: int = MAX_VAL
+    for i in range(1,n):
+        x1: int = random.randint(-99999999999999, last_val)
+        new_list.append(x1)
+        last_val = x1
     return new_list
 
 def evaluate_runtime(fn_name, start_size: int, end_size: int) -> np.array:
