@@ -1,4 +1,7 @@
-nums = [1,2,3,4,5]
-for i in range(len(nums)):
-    nums[i] = nums[i]*2
-print(nums)
+def f(n: int, b: int) -> int:
+    if n == 0: # base case
+        return b
+    else: # recursive rule
+        return 1 + f(n-1, b)
+    
+print(f(3,4))
