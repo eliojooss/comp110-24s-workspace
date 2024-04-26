@@ -38,4 +38,3 @@ class Node:
         return last.data
 
 def value_at(head: Node | None, index: int) -> int:
-    
