@@ -38,3 +38,35 @@ class Node:
         return last.data
 
 def value_at(head: Node | None, index: int) -> int:
+    """Find value at an index."""
+    if head == None:
+        raise IndexError("Index is out of bounds on the list.")
+    if index == 0:
+        return head.data
+    else: 
+        return value_at(head.next, index -1 )
+    
+def max(head: Node | None) -> int:
+    """Find the max."""
+    if head == None:
+        raise ValueError("Cannot call max with None")
+    if head.next == None:
+        return head.data
+    else: 
+        max_val = max(head.next)
+        if head.data > max_val:
+            return head.data
+        else:
+            return max_val
+        
+def linkify(items: list[int]) -> Node | None:
+    if items == []:
+        return None
+    else:
+        return Node(items[0], linkify(items[1:]))
+    
+def scale(head: Node | None, factor: int) -> Node | None:
+    if head == None:
+        return None
+    else:
+        return Node(head.data * factor, scale(head.next, factor))
